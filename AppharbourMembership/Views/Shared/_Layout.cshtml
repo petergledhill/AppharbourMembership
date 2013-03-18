@@ -29,6 +29,12 @@
             </div>
         </header>
         <div id="body">
+            
+
+            @Roles.Provider.GetType()
+            @Membership.Provider.GetType()
+            
+
             @RenderSection("featured", required: false)
             <section class="content-wrapper main-content clear-fix">
                 @RenderBody()
